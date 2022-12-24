@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="/css/thankyou.css">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="thankyou-page">
+    <div class="_header">
+        <h1>Thank You!</h1>
+    </div>
+    <div class="_body">
+        <div class="_box">
+            <h2>
+                <strong>Please check your email</strong> <%= text %>
+            </h2>
+        </div>
+    </div>
+    <div class="_footer">
+         
+        <% if(text=="to know your appointment status."){%>
+            <div style="display: flex; flex-direction: row; justify-content: center;">Having trouble?
+            <form action="/contactus" method="post"> <button style="border: none; margin-left: 10px;" type="submit">Contact us</button></form></div>
+        <%}%>
+        <form action="/home" method="post"> <button class="btn" type="submit"> Back to homepage</button></form>
+    </div>
+</div>

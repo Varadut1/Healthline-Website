@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>
+        Webpage
+    </title>
+    <link rel="stylesheet" href="/css/index2.css">
+    <link rel="icon" type="icon" href="https://img.icons8.com/emoji/512/stethoscope-emoji.png">
+</head>
+
+<body class="container">
+    <div class="left">
+        <img src="<%= image %>" alt="Profile Picture" class="image" style="width: 13vw; height: 13vw; border-radius: 50%; object-fit: cover;">
+        <h2 class="Name" style="margin:8px 0;">
+            <%= text1 %><br>
+        </h2>
+    <p class="bio">
+        <%= text2 %><br>
+        <%= text3 %><br>
+        <%= text4 %><br>
+        <%= text5 %><br>
+        <%= text6 %><br>
+        <%= text7 %><br>
+        <%= text8 %><br>
+    </p>
+</div>
+<div class="right">
+    <%- include("partials/form"); -%>
+</div>
+
+<%- include("partials/footer"); -%>

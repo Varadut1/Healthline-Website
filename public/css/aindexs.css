@@ -1,0 +1,204 @@
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    top:8%;
+}
+.upper{
+    height:110vw;
+}
+.dropbtn {
+    background-color: #4CAF50;
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #686262}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+#navbar{
+    display: none;
+    justify-content: space-evenly;
+}
+#navbar ul li a{
+    font-size: 0.8rem;
+}
+#left{
+    margin: auto;
+    margin-bottom: 5%;
+    width: 70vw;
+
+}
+#header{
+    display: flex;
+}
+#left h1{
+    font-size:5vw;
+    margin-bottom:1.5vw;
+    color:rgb(255, 253, 253);
+    text-align: center;
+    text-shadow: 5px 5px  rgb(0, 0, 0);
+}
+#left p{
+    color:rgb(247, 245, 245);
+    font-size: 2.5vw;
+    text-align: center;
+}
+.btn{
+    padding: 8px 10px;
+    font-size: 2vw;
+    background-color: rgb(168, 130, 130);
+    color:black;
+    margin-top: 50px;
+    cursor: pointer;
+    width: 30%;
+    border-radius: 20px;
+}
+#right{
+    width:70vw;
+    margin: 0 auto 5% auto;
+    height: auto;
+}
+#right h2{
+    text-align: center;
+    font-size: 4vw;
+    text-shadow: 3px 3px  rgb(214, 203, 203);
+}
+#right ul{
+    padding-left:10%;
+    text-align:center;
+    font-size: 1.5vw;
+}
+
+/* #header{
+    display: none;
+} */
+
+
+.shopbtn{
+    margin:0;
+    /* display:flex; */
+    justify-content: center;
+    align-items: center;
+}
+#logo img{
+    width: 50px;
+    height: 50px;
+    margin: 3px 30px;
+}
+
+#title h2{
+    font-size: 3.5vw;
+}
+#title h4{
+    font-size:2vw ;
+}
+#boxes{
+    position:relative;
+    width:auto;
+    display:flex;
+    flex-wrap: wrap;
+    /* border:2px solid red; */
+    padding: 10px;
+    margin-bottom: 15px;
+}
+#boxes h3{
+    margin-bottom: 1.6vw;
+    font-size: 18px;   
+}
+
+.allBox h1 {
+    margin: 2px auto;
+    font-size: 2vw;
+    line-height: 5vw;
+}
+.allBox div{
+    font-size: 1.3vw;
+}
+
+.allBox{
+    width: 28vw;
+    height: 30vw;
+}
+
+.box1{
+    /* border: 2px solid red; */
+    /* background-size: 145px; */
+    background-position-x: center;
+    background-position-y: center;
+    margin: 10px;
+}
+
+.box2{
+    /* border: 2px solid red; */
+    /* background-size: 150px; */
+    background-position-x: center;
+    background-position-y: 10px;
+    margin: 10px;
+}
+
+.box3{
+    /* border: 2px solid red; */
+    margin: 10px;
+    /* background-size: 127px; */
+    background-position-x: center;
+    background-position-y: 18px;
+}
+
+#doctors{
+    display: flex;
+    flex-wrap: wrap;
+}
+.doctor{
+    width: 180px;
+    height: 200px;
+    /* border: 2px solid red; */
+    margin: 7px;
+    background-size: 180px;
+    font-size: 20px;
+}
+.doctor button{
+    font-size: 12px;
+}
+.info{
+    font-size: 0.vw;
+}
+
+.join { 
+    padding: 0.8vw;
+}
+
+.addtocart input{
+    width: 6vw;
+}

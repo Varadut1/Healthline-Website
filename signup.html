@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/signin.css">
+</head>
+<body>
+  <div style="background-color: green; width: 100%; padding: 5px; font-size: 2vw;">You are not signed Up!</div>
+    <form action="/signup" method="post">
+        <h1>SIGN UP</h1>
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+            <input type="text" id="form1Example5" class="form-control" name="name" />
+            <label class="form-label" for="form1Example2">Name</label>
+        </div>
+
+        <div class="form-outline mb-4">
+          <input type="email" id="form1Example1" class="form-control" name="mail"/>
+          <label class="form-label" for="form1Example1">Email address</label>
+        </div>
+    
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+          <input type="password" id="form1Example2" class="form-control" name="pass" />
+          <label class="form-label" for="form1Example2">Password</label>
+        </div>
+
+        <div class="form-outline mb-4">
+            <input type="password" id="form1Example3" class="form-control" name="con_pass" />
+            <label class="form-label" for="form1Example2">Confirm Password</label>
+        </div>
+        
+        <!-- 2 column grid layout for inline styling -->
+        <div class="row mb-4">
+          <div class="col d-flex justify-content-center">
+            <!-- Checkbox -->
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+              <label class="form-check-label" for="form1Example4"> Remember me </label>
+            </div>
+          </div>
+      
+
+        <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+    </form>
+</body>
+</html>

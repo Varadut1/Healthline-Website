@@ -1,0 +1,72 @@
+<%- include("partials/header"); -%>
+
+
+<!-- <section id="page-header" class="about-header">
+    <h2>#Check Your Cart</h2>
+   
+</section> -->
+ <!-- <p>LEAVE A MESSAGE, We love to hear from you!</p> -->
+<section id="cart" class="section-p1">
+    <table width="100%">
+        <thead>
+            <tr>
+                <td>Remove</td>
+                <td>Image</td>
+                <td>Product</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td>Subtotal</td>
+            </tr>
+        </thead>
+        <tbody>
+            <% medicines.forEach(function(item){ %>
+                <form action="/delete" method="post">
+                <tr>
+                    <td><input type="checkbox" name="checkbox" value="<%= item._id %>" onChange="this.form.submit()"></td>
+                    <td><img src="<%= item.med_link %>" alt=""></td>
+                    <td><%= item.med_name %></td>
+                    <td>Rs.<%= item.price %></td>
+                    <td><input type="number" value="<%= item.num %>" disabled></td>
+                    <td>Rs.<%= item.total_price %></td>
+                 </tr>
+            </form>
+            <%});%>
+        </tbody>
+
+    </table>
+</section>
+
+<section id="cart-add" class="section-p1">
+    <div id="coupon">
+        <h3>Apply Coupon</h3>
+        <div>
+            <input type="text" placeholder="Enter Your Coupon">
+            <button class="normal">Apply</button>
+        </div>
+    </div>
+
+    <div id="subtotal">
+        <h3>Cart Totals</h3>
+        <table>
+        <tr>
+            <td>Cart Subtotal</td>
+            <td>Rs.<%= total%></td>
+        </tr>
+        <tr>
+            <td>Shipping</td>
+            <td>Free</td>
+        </tr>
+        <tr>
+            <td><strong>Total</strong></td>
+            <td><strong>Rs.<%= total%></strong></td>
+        </tr>
+    </table>
+    <div style="display: flex; flex-direction: row; justify-content: space-between;">
+    <button class="normal" type="submit"><a href="https://rzp.io/l/healthlinepay" style="color: white;"> Proceed to Check Out</a></button>
+    <form action="/pay" method="post"><button class="normal" type="submit">Clean Cart</button></form>
+    </div>
+</div>
+</section>
+
+
+<%- include("partials/footer"); -%>

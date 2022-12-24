@@ -1,0 +1,231 @@
+<%- include("partials/header"); -%>
+
+    <div class="upper">
+        <div id="home">
+            <div id="left">
+                <h1 class="h-primary">Welcome to Healthline</h1>
+                <p>
+                    A one-stop destination to serve all your medical needs. We provide doctor appointment booking services as well as an E-commerce platform for shopping all health-care related products.</p>
+                <button class="btn"><strong><a href="#doctors">Book An Appointment</a></strong></button>
+
+            </div>
+            <div id="right">
+                <h2>Shop Now! </h2>
+                <ul>
+                 <li>Find all of your healthcare products at one destination! Shop medicines, healthcare, skincare products, and more at reasonable prices, delivered to your doorstep!</li>    
+
+                    <button class="btn shopbtn"><strong><a
+                                href="D:\webdev\ecommerce\ecommerce\capstone website\shop.html">Shop</a></strong></button>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="lower">
+        <div class="moto">
+            <div id="title">
+                <h2 >Our approach to healthcare</h2>
+                <h4 >Providing high-quality, trusted, and accessible healthcare is our reason for
+                    being</h4>
+            </div>
+            <div id="boxes">
+                <div class="box1 allBox">
+                    <img src="https://cdn-icons-png.flaticon.com/512/73/73026.png" style="width:8vw;height:8vw;">
+                    <h1 >Connect</h1>
+                    <div>We understand healthcare goes beyond signs, symptoms, diagnosis, and
+                        treatment. It’s
+                        about the deep connection between doctors and patients that leads to continuous care and
+                        sustained,
+                        better outcomes.</div>
+                </div>
+                <div class="box2 allBox">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5465/5465754.png" style="width:8vw;height:8vw;">
+                    <h1 >Trust</h1>
+                    <div>Healthline works on trust. We are aware of the responsibility placed on
+                        us by 30 crore+
+                        patients and over a lakh doctors. We always have and always will do everything we possibly can
+                        to uphold this trust.</div>
+                </div>
+                <div class="box3 allBox">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3816/3816184.png" style="width:8vw;height:8vw;">
+                    <h1 >Transparency</h1>
+                    <div>We believe in full disclosure. We believe in communicating openly and
+                        honestly, and holding
+                        ourselves to the highest ethical standards.</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="usersay">
+            <h2>What Our User's Say</h2>
+        </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides">
+                <q>This website is really great. It is very easy to use and doctors are also very helpful. This website
+                    really help me a lot</q>
+                <p class="author">- Sana Rathi</p>
+            </div>
+
+            <div class="mySlides">
+                <q>Hassle free from older version of booking appointment via telephone. Thanks Helthline to making it
+                    simple</q>
+                <p class="author">- Karan Bhandari</p>
+            </div>
+
+            <div class="mySlides">
+                <q>I have seen number of health website but healthline is best among them. With appointment facility it
+                    also provide the medical ecommerce so I don't have to go to other platoform for medicines. Thank you
+                    Healthline</q>
+                <p class="author">- Ajay Vibhute</p>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+
+
+        <h2 id="title2">Available doctors</h2>
+        <div id="doctors">
+            <div class="doctor1 doctor">
+                <div class="info">
+                    Name : Dr. Jhunjhunwala<br>
+                    Degree : MD<br>
+                    Specialization : Heart
+                    <form action="/dynamic/0" method="post">
+                        <button>Book Appointment</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="doctor2 doctor">
+                <div class="info">
+                    Name : Dr. Yadav<br>
+                    Degree : MBBS<br>
+                    Specialization : Bones
+                    <form action="/dynamic/1" method="post">
+                        <button>Book Appointment</button>
+                    </form>
+                </div>
+            </div>
+            <div class="doctor3 doctor">
+                <div class="info">
+                    Name : Dr. Sinha<br>
+                    Degree : BDS<br>
+                    Specialization : Dentist
+                    <form action="/dynamic/2" method="post">
+                        <button class="d1" name="third">Book Appointment</a></button>
+                    </form>
+                </div>
+            </div>
+            <div class="doctor4 doctor">
+                <div class="info">
+                    Name : Dr. Akolkar<br>
+                    Degree : MS<br>
+                    Specialization : Brain
+                    <form action="/dynamic/3" method="post">
+                        <button class="d1" name="fourth">Book Appointment</a></button>
+                    </form>
+                </div>
+            </div>
+            <div class="doctor5 doctor">
+                <div class="info">
+                    Name : Dr. Dinesh<br>
+                    Degree : MBBS<br>
+                    Specialization : Dermatology
+                    <form action="/dynamic/4" method="post">
+                        <button class="d1" name="fifth">Book Appointment</a></button>
+                    </form>
+                </div>
+            </div>
+            <div class="doctor6 doctor">
+                <div class="info">
+                    Name : Dr. Gandhi<br>
+                    Degree : BHMS<br>
+                    Specialization : General
+                    <form action="/dynamic/5" method="post">
+                        <button class="d1" name="sixth">Book Appointment</a></button>
+                    </form>
+                </div>
+            </div>
+            <div class="doctor7 doctor">
+                <div class="info">
+                    Name : Dr. Kashid<br>
+                    Degree : MD<br>
+                    Specialization : Nephrology
+                    <form action="/dynamic/6" method="post">
+                        <button class="d1" name="seventh">Book Appointment</a></button>
+                    </form>
+                </div>
+            </div>
+            <div class="doctor8 doctor">
+                <div class="info">
+                    Name : Dr. Bhandari<br>
+                    Degree : BHMS<br>
+                    Specialization : General
+                    <form action="/dynamic/7" method="post">
+                        <button class="d1" name="eighth">Book Appointment</a></button>
+                    </form>
+                </div>
+            </div>
+            <div class="doctor9 doctor">
+                <div class="info">
+                    Name : Dr. Shaikh<br>
+                    Degree : MS<br>
+                    Specialization : Ophthalmology
+                    <form action="/dynamic/8" method="post">
+                        <button class="d1" name="ninth">Book Appointment</a></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="beadoctor">
+            <img
+                src="https://d33wubrfki0l68.cloudfront.net/e2a313269984e152f7c7d4fb516beb91e1eea075/50eff/assets/images/home/are_you_doctor.png">
+            <div class="join">
+                <h2>Are you a Doctor?</h2>
+                <h3>Register with us and connect with <br>your patients from anywhere.</h3>
+                <form action="/doctors" method="post">
+                <button>Join Now</button>
+                </form>
+                <!-- <form action="" method="post"><button type="submit">Join Now</button></form></li> -->
+            </div>
+        </div>
+        <br><br>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+    
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+    
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+    
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+    <%- include("partials/footer"); -%>
