@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
@@ -11,7 +12,7 @@ let alert = require('alert');
 var session = require('express-session');
 var flash = require('connect-flash');
 const mongoose = require('mongoose');
-mongoose.connect("mongodb+srv://varad:varad@cluster0.mejuiwk.mongodb.net/EDI", {useNewUrlParser: true})
+mongoose.connect(process.env.DB, {useNewUrlParser: true})
 app.use(session({
     secret: 'secret',
     cookie: {maxAge: 6000},
